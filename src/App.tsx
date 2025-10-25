@@ -1,28 +1,24 @@
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import HomePage from './pages/HomePage';
+import MyFeeds from './pages/MyFeeds';
 
 function App() {
   return (
-    <div className="bg-gray-900 text-white min-h-screen font-sans">
-      <Navbar />
+    <Router>
+      <div className="bg-gray-900 text-white min-h-screen font-sans">
+        <Navbar />
 
-      <main className="container mx-auto px-5 md:px-20 pb-20">
-        <About />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/feeds" element={<MyFeeds />} />
+        </Routes>
 
-        <Skills />
-
-        <Projects />
-
-        <Contact />
-      </main>
-
-      <footer className="bg-gray-800 text-center py-4">
-        <p>&copy; 2025. All Rights Reserved.</p>
-      </footer>
-    </div>
+        <footer className="bg-gray-800 text-center py-4">
+          <p>&copy; 2025. All Rights Reserved.</p>
+        </footer>
+      </div>
+    </Router>
   );
 }
 

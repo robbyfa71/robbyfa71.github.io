@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import Avatar from './Avatar';
+import Avatar from './Avatar'
 import SocialLinks from './SocialLinks';
 
 const About = () => {
@@ -31,6 +31,5 @@ const About = () => {
     </section>
   );
 };
-
 
 export default About;
