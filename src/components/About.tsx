@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import Avatar from './Avatar'
 import SocialLinks from './SocialLinks';
+import cv from '../assets/cv.pdf';
 
 const About = () => {
   return (
@@ -24,6 +25,9 @@ const About = () => {
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
               A passionate and results-driven professional with a strong focus on cybersecurity and quality assurance. With a keen eye for detail and a proactive approach, I specialize in identifying vulnerabilities, mitigating risks, and ensuring the delivery of high-quality, secure software. My goal is to contribute to a safer digital world by building robust and resilient systems.
             </p>
+            <a href={cv} target='_blank' className='bg-cyan-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-cyan-600 transition-colors duration-300'>
+              Download CV
+            </a>
             <SocialLinks />
           </motion.div>
         </div>

@@ -9,7 +9,7 @@ const socialLinks = [
 
 const SocialLinks = () => {
   return (
-    <div className="flex justify-center md:justify-start space-x-4">
+    <div className="flex justify-center mt-6 md:justify-start space-x-4">
       {socialLinks.map((link, index) => (
         <a
           key={index}
